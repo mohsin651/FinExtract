@@ -6,7 +6,8 @@ import json
 file = open("mohsin.txt","r")
 d = file.readlines()
 key=""
-for i in key:
+
+for i in d:
     key+=i.strip()
 # print(key)
 
