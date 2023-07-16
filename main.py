@@ -4,9 +4,10 @@ import openai
 import json
 import pandas as pd
 
-secret_key = "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"
+file = open("mohsin.txt", "r")
+key=file.read().strip()
 
-openai.api_key = secret_key
+openai.api_key = key
 
 def extract_financial_data(text):
     prompt = get_prompt_financial() + text
