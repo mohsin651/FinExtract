@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import openai
 import json
-import pandas as pd
+
 
 file = open("mohsin.txt", "r")
 key=file.read().strip()
