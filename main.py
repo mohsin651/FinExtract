@@ -3,9 +3,12 @@ import pandas as pd
 import openai
 import json
 
-
-file = open("mohsin.txt", "r")
-key=file.read().strip()
+file = open("mohsin.txt","r")
+d = file.readlines()
+key=""
+for i in key:
+    key+=i.strip()
+# print(key)
 
 openai.api_key = key
 
